@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,63 +10,85 @@
     <link rel="stylesheet" href="assets/css/reset.css">
 
     <!-- Bootstrap stylesheet -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
 
     <!-- Custom stylesheet -->
     <link rel="stylesheet" href="assets/css/style.css">
-    
+
     <!-- Added link to the jQuery Library -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    
+
     <!-- Font awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+        crossorigin="anonymous">
 
 
     <!-- link to game -->
     <script src="assets/javascript/game.js"></script>
 </head>
-<body>
-    <h1>Crystals Collector</h1>
-    <br>
-    <div id="instructions">
-        <p>You will be given a random number art the start of the game
-            <br>
-            There are 4 crystals below, by clicking on a crystal you will add a specific amount of points to your total score. 
-            <br>
-            You win the game by matching your score to random number. You lose if your total score goes above the random number.
-            <br>
-            The value of each crystal is hidden until you click on it
-           <br>
-            Each time when the game starts, the game will change the values of each crystal
-        </p>
-        <br>
-        <br>
 
-        <div id="random-number">
-            <h2> Number to guess: 00</h2>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+            <h1>Crystals Collector</h1>
+            </div>
+        </div>
+        <br>
+        <div class="row" id="instructions">
+            <div class="col-md-6">
+                <p>You will be given a random number art the start of the game
+                    <br> There are 4 crystals below, by clicking on a crystal you will add a specific amount of points to your
+                    total score.
+                    <br> You win the game by matching your score to random number. You lose if your total score goes above the
+                    random number.
+                    <br> The value of each crystal is hidden until you click on it
+                    <br> Each time when the game starts, the game will change the values of each crystal
+                </p>
+                <br>
+                <br>
+            </div>
+        </div>
+
+        <div>
+            <h2 id="random-number"></h2>
         </div>
         <br>
         <div id="tally">
+            <p id="win-or-lose"></p>
             <p id="wins">Wins: 0</p>
-            
             <p id="losses">Losses: 0</p>
         </div>
 
-        <div id="total-score">
-            <h2>Your total score is: 0</h2>
+        <div>
+            <h2 id="total-score">Your total score is: 0</h2>
         </div>
 
-        <button class="btn" id="red-btn"><i class="far fa-gem"></i></i></button>
+        <button class="btn" id="red-btn">
+            <i class="far fa-gem"></i>
+            </i>
+        </button>
 
-        <button class="btn" id="blue-btn"><i class="far fa-gem"></i></i></button>
+        <button class="btn" id="blue-btn">
+            <i class="far fa-gem"></i>
+            </i>
+        </button>
 
-        <button class="btn" id="green-btn"><i class="far fa-gem"></i></i></button>
+        <button class="btn" id="green-btn">
+            <i class="far fa-gem"></i>
+            </i>
+        </button>
 
-        <button class="btn" id="yellow-btn"><i class="far fa-gem"></i></i></button>
+        <button class="btn" id="yellow-btn">
+            <i class="far fa-gem"></i>
+            </i>
+        </button>
 
 
     </div>
-    
-    
+
+    </div>
 </body>
+
 </html>
