@@ -51,7 +51,6 @@ $(document).ready(function() {
         //winning determinants 
         if(totalValue === numberToGuess){
             $("#win-or-lose").text("You win!");
-             alert("you win");
             wins++;
             totalValue = 0;
             $("#total-score").text("Your total score" + totalValue);
@@ -71,7 +70,7 @@ $(document).ready(function() {
         }
         if(totalValue > numberToGuess){
             $("#win-or-lose").text("You're a loser and you suck");
-            alert("you're a loser and you suck");
+           
             losses++;
              $("#losses").text("Losses: "+ losses);
             totalValue = 0;
